@@ -5,4 +5,7 @@ const router = require('./routes');
 // Initialize db connection
 db();
 
-app({ router });
+app({
+  router,
+  auth: true,
+});
